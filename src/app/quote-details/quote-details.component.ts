@@ -27,5 +27,11 @@ export class QuoteDetailsComponent implements OnInit {
   showForm(){
 
   }
+  upvoted(){
+
+  }
+  downvoted(){
+    
+  }
 
 }

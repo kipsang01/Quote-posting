@@ -9,8 +9,8 @@
                 </blockquote>
             </div>
             <div class="card-footer">
-                <button class="like-btn"(click)= "liked(i)" ><i class="fa fa-thumbs-o-up like-icon" aria-hidden="true"></i></button>{{quote.upvotes}} Upvotes
-                <button class="disliked-btn" (click)= "disliked(i)" ><i class="fa fa-thumbs-o-down dislike-icon" aria-hidden="true"></i></button> {{quote.downvotes}} downvotes
+                <button class="like-btn"(click)= "upvoted(i)" ><i class="fa fa-thumbs-o-up like-icon" aria-hidden="true"></i></button>{{quote.upvotes}} Upvotes
+                <button class="disliked-btn" (click)= "downvoted(i)" ><i class="fa fa-thumbs-o-down dislike-icon" aria-hidden="true"></i></button> {{quote.downvotes}} downvotes
                 <span>{{quote.datePosted |date:'shortDate'}}</span>
             </div>
         </div>
