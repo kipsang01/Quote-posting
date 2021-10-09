@@ -27,11 +27,17 @@ export class QuoteDetailsComponent implements OnInit {
   showForm(){
 
   }
-  upvoted(){
-
+  //upvote function
+  upvoted(i:number):void{
+    this.quotes[i].upvotes +=1;
   }
-  downvoted(){
-    
+  //downvote function
+  downvoted(i:number):void{
+    this.quotes[i].downvotes +=1;
+  }
+  //delete button
+  deleteQuote(index:number){
+    this.quotes.splice(index,1)
   }
 
 }
