@@ -1,0 +1,16 @@
+.like-icon{
+    color: blue;
+    font-size: 36px;
+}
+.dislike-icon{
+    color: red;
+    font-size: 36px;
+}
+.delete-icon{
+    color: red;
+    font-size: 32px;
+}
+.like-btn, .disliked-btn, .delete-btn{
+    border: none;
+    margin:0 10px;
+}
