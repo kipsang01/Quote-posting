@@ -1,4 +1,5 @@
 import { Component, OnInit ,Output, EventEmitter} from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { Quote } from '../quote';
 
 @Component({
@@ -26,6 +27,9 @@ export class QuoteFormComponent implements OnInit {
   submitQuote(){
     this.newQuote = new Quote (this.name, this.content,this.author)
     this.quoting.emit(this.newQuote);
+    this.name = "";
+    this.content = "";
+    this.author = "";
   }
 
   ngOnInit(): void {

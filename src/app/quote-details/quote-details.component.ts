@@ -43,7 +43,7 @@ export class QuoteDetailsComponent implements OnInit {
   //adding quote
   addQuote(value:any){
     this.newquote = value;
-    this.quotes.push(this.newquote)
+    this.quotes.unshift(this.newquote)
 
   }
 

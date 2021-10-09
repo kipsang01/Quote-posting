@@ -1,11 +1,12 @@
-<div class="container">
-    <form>
+<div class="container m-3">
+    <form #quoteform = "ngForm">
         <label for="quote-content" class="form-label" >Your Name:</label>
-        <input type="text" class="form-control" name="quote-name" [(ngModel)]="name">
+        <input type="text" class="form-control w-50 mb-2" name="quote-name" [(ngModel)]="name">
         <label for="quote-content" class="form-label" >quote:</label>
-        <input type="text" class="form-control" name="quote-content" [(ngModel)]="content">
-        <input type="text" class="form-control" name="quote-author" [(ngModel)]="author">
-        <button type="submit" (click)="submitQuote()">Post</button>
+        <textarea type="text" class="form-control w-75 mb-2" name="quote-content" [(ngModel)]="content"></textarea>
+        <label for="quote-content" class="form-label" >Author:</label>
+        <input type="text" class="form-control w-50 mb-2" name="quote-author" [(ngModel)]="author">
+        <button type="submit" class="btn btn-primary" (click)="submitQuote()">Post</button>
       </form>
       
 </div>
