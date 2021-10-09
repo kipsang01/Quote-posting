@@ -8,7 +8,11 @@
                     <footer class="blockquote-footer">From {{quote.author}}</footer>
                 </blockquote>
             </div>
-            <div class="card-footer"></div>
+            <div class="card-footer">
+                <button class="like-btn"(click)= "liked(i)" ><i class="fa fa-thumbs-o-up like-icon" aria-hidden="true"></i></button>{{quote.upvotes}} Upvotes
+                <button class="disliked-btn" (click)= "disliked(i)" ><i class="fa fa-thumbs-o-down dislike-icon" aria-hidden="true"></i></button> {{quote.downvotes}} downvotes
+                <span>{{quote.datePosted |date:'shortDate'}}</span>
+            </div>
         </div>
     </div>
 </div>

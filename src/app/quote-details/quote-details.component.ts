@@ -16,8 +16,8 @@ export class QuoteDetailsComponent implements OnInit {
 
   quotes:Quote[] = [
     new Quote( "Enock Kipsang","It always seems impossible till it's done","Nelson Mandela"),
-    new Quote( "Enock Kipsang","Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking.","Steve Jobs"),
-    new Quote( "Enock Kipsang","Spread love everywhere you go. Let no one ever come to you without leaving happier.","Mother Theresa")
+    new Quote( "Albert","Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking.","Steve Jobs"),
+    new Quote( "Backley","Spread love everywhere you go. Let no one ever come to you without leaving happier.","Mother Theresa")
 
   ]
 
