@@ -10,6 +10,7 @@ export class QuoteDetailsComponent implements OnInit {
 
   content!:string;
   author!: string;
+  newquote:any;
   show:boolean = false;
 
   constructor() { }
@@ -38,6 +39,12 @@ export class QuoteDetailsComponent implements OnInit {
   //delete button
   deleteQuote(index:number){
     this.quotes.splice(index,1)
+  }
+  //adding quote
+  addQuote(value:any){
+    this.newquote = value;
+    this.quotes.push(this.newquote)
+
   }
 
 }
