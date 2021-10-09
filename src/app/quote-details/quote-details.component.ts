@@ -22,6 +22,8 @@ export class QuoteDetailsComponent implements OnInit {
 
   ]
 
+
+
   ngOnInit(): void {
   }
   //display form
@@ -32,6 +34,9 @@ export class QuoteDetailsComponent implements OnInit {
   //upvote function
   upvoted(i:number):void{
     this.quotes[i].upvotes +=1;
+     this.quotes.sort((a, b) => {
+      return b.upvotes - a.upvotes;
+    });
   }
   //downvote function
   downvoted(i:number):void{
@@ -45,6 +50,10 @@ export class QuoteDetailsComponent implements OnInit {
   addQuote(value:any){
     this.newquote = value;
     this.quotes.unshift(this.newquote);
+    this.quotes.sort((a, b) => {
+      return b.upvotes - a.upvotes;
+      });
   }
+
 
 }

@@ -11,4 +11,5 @@ export class Quote {
             this.author = author;
             this.datePosted = new Date();
         }
+        
 }
