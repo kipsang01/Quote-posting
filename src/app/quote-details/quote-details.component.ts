@@ -24,8 +24,9 @@ export class QuoteDetailsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  //display form
   showForm(){
+    this.show =! this.show;
 
   }
   //upvote function
@@ -43,8 +44,7 @@ export class QuoteDetailsComponent implements OnInit {
   //adding quote
   addQuote(value:any){
     this.newquote = value;
-    this.quotes.unshift(this.newquote)
-
+    this.quotes.unshift(this.newquote);
   }
 
 }

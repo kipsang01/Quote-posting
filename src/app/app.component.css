@@ -1,0 +1,29 @@
+.container-fluid{
+   margin-top: 10px;
+   
+}
+footer{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    position: static;
+    background-color: rgb(61, 132, 226);
+}
+footer p{
+    margin-left: 300px;
+    color: white;
+}
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-youtube {
+    color: rgb(235, 15, 15);
+  }
