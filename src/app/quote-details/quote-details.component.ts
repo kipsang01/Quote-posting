@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Quote } from '../quote';
 
 @Component({
   selector: 'app-quote-details',
@@ -7,9 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuoteDetailsComponent implements OnInit {
 
+  content!:string;
+  author!: string;
+  show:boolean = false;
+
   constructor() { }
 
+  quotes:Quote[] = [
+    new Quote( "Enock Kipsang","It always seems impossible till it's done","Nelson Mandela"),
+    new Quote( "Enock Kipsang","Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking.","Steve Jobs"),
+    new Quote( "Enock Kipsang","Spread love everywhere you go. Let no one ever come to you without leaving happier.","Mother Theresa")
+
+  ]
+
   ngOnInit(): void {
+  }
+
+  showForm(){
+
   }
 
 }
