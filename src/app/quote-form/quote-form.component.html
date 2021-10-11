@@ -9,7 +9,7 @@
         [class.is-invalid] = "quotecontent.invalid && quotecontent.touched"></textarea>
         <small class="text-danger" [class.d-none] = "quotecontent.valid ||quotecontent.untouched">Enter quote</small><br>
         <label for="quote-content" class="form-label" >Author:</label>
-        <input type="text" class="form-control w-50 mb-2" name="quote-author" [(ngModel)]="author" #quoteauthor = "ngModel" required
+        <input type="text" class="form-control w-50 mb-2" name="author" [(ngModel)]="author" #quoteauthor = "ngModel" required
         [class.is-invalid] = "quoteauthor.invalid && quoteauthor.touched">
         <small class="text-danger" [class.d-none] = "quoteauthor.valid ||quoteauthor.untouched">Author is required</small><br>
         <button type="submit" class="btn btn-primary" [disabled]="quoteForm.invalid" >Post</button>

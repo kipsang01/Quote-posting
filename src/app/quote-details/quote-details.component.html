@@ -5,14 +5,14 @@
         <div class="card m-3" *ngFor = "let quote of quotes; index as i">
             <div class="card-header"> {{quote.name}}</div>
             <div class="card-body">
-                <blockquote class="blockquote"> <p>{{quote.content}}</p>
+                <blockquote class="blockquote"> <p>{{quote.content}}</p> 
                     <footer class="blockquote-footer">From {{quote.author}}</footer>
                 </blockquote>
             </div>
             <div class="card-footer">
                 <button class="like-btn"(click)= "upvoted(i)" ><i class="fa fa-thumbs-o-up like-icon" aria-hidden="true"></i></button>{{quote.upvotes}} Upvotes
                 <button class="disliked-btn" (click)= "downvoted(i)" ><i class="fa fa-thumbs-o-down dislike-icon" aria-hidden="true"></i></button> {{quote.downvotes}} downvotes
-                <span>{{quote.datePosted | timeCounter}}</span> <span><button class="delete-btn" (click)= "deleteQuote(i)"><i class="fa fa-trash delete-icon" aria-hidden="true"></i></button></span>
+                <span class="text-primary mr-3">{{quote.datePosted | timeCounter}}</span> <span><button class="delete-btn" (click)= "deleteQuote(i)"><i class="fa fa-trash delete-icon" aria-hidden="true"></i></button></span>
             </div>
         </div>
     </div>

@@ -48,17 +48,12 @@ export class QuoteDetailsComponent implements OnInit {
   }
   //adding quote
   addQuote(value:any){
-    if (value.one == "") {
-      alert("empty quotes")
-      
-    } else {
       this.newquote = value.one;
     this.quotes.unshift(this.newquote);
     this.quotes.sort((a, b) => {
       return b.upvotes - a.upvotes;
       });
     this.show = value.two;
-  }
     }
     
 
