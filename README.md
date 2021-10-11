@@ -1,27 +1,30 @@
-# QuotePosting
+# QUOTE- POSTING
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
+Quote-posting is an appliacation thet allows users to create new quotes and also be able to give an upvote or downvote on each quote.
 
-## Development server
+## Author
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Enock Kipsang
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+install [pip](https://nodejs.org/en/download/) and [visual studio] (https://visualstudio.microsoft.com/) or any other code editor.
+Git clone this repository to your machine and run it in any browser.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Usage
+ A user clicks the 'create' button and enter the quote in form provided and then post it and it will be displayed.
+ User can give an upvote or downvote by clicking thumb-up or thumb-down respectively
+ User can also delete the quote by clicking trash icon.
 
-## Running unit tests
+ ## Technologies used
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ This application is built using [angular](https://angular.io/).
+ Css stylesheets.
 
-## Running end-to-end tests
+ ## Bugs
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+ Does not have a database to store input quotes
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
