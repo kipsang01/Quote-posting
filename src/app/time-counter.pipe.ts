@@ -10,7 +10,7 @@ export class TimeCounterPipe implements PipeTransform {
     if (value) {
         const seconds = Math.floor((+new Date() - +new Date(value)) / 1000);
         if (seconds < 29) 
-            return seconds;
+            return 'Just Now';
             if(seconds>60 && seconds<120)
             return '1 min ago';
         const intervals = {
