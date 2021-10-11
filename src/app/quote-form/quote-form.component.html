@@ -1,12 +1,18 @@
  <div class="container m-3" >
     <form #quoteForm = "ngForm" (submit)="submitQuote(quoteForm.value)">
         <label for="quote-content" class="form-label" >Your Name:</label>
-        <input type="text" class="form-control w-50 mb-2" name="name" [(ngModel)]="name">
+        <input type="text" class="form-control w-50 mb-2" name="name" [(ngModel)]="name" #namequote="ngModel" required
+        [class.is-invalid] = "namequote.invalid && namequote.touched">
+          <small class="text-danger" [class.d-none] = "namequote.valid ||namequote.untouched">Name is required</small><br>
         <label for="quote-content" class="form-label" >quote:</label>
-        <textarea type="text" class="form-control w-75 mb-2" name="content" [(ngModel)]="content"></textarea>
+        <textarea type="text" class="form-control w-75 mb-2" name="content" [(ngModel)]="content" #quotecontent="ngModel" required
+        [class.is-invalid] = "quotecontent.invalid && quotecontent.touched"></textarea>
+        <small class="text-danger" [class.d-none] = "quotecontent.valid ||quotecontent.untouched">Enter quote</small><br>
         <label for="quote-content" class="form-label" >Author:</label>
-        <input type="text" class="form-control w-50 mb-2" name="quote-author" [(ngModel)]="author">
-        <button type="submit" class="btn btn-primary" >Post</button>
+        <input type="text" class="form-control w-50 mb-2" name="quote-author" [(ngModel)]="author" #quoteauthor = "ngModel" required
+        [class.is-invalid] = "quoteauthor.invalid && quoteauthor.touched">
+        <small class="text-danger" [class.d-none] = "quoteauthor.valid ||quoteauthor.untouched">Author is required</small><br>
+        <button type="submit" class="btn btn-primary" [disabled]="quoteForm.invalid" >Post</button>
       </form>
 </div> 
 
